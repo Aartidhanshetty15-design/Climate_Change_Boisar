@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change Impact Analysis | Boisar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header>
+    <nav>
+        <div class="logo">
+            🌍 Climate Boisar
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#analytics">Analytics</a></li>
+            <li><a href="#survey">Survey</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <p class="small-title">COMMUNITY ENGAGEMENT PROJECT</p>
+        <h1>Climate Change Impact Analysis</h1>
+        <h2>At Local Levels in Boisar</h2>
+        <p>Understanding how changing climate and weather conditions affect the local community, environment and daily life.</p>
+        <a href="#dashboard" class="button">View Dashboard</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+    <h2>About the Project</h2>
+    <p>Climate change is one of the major environmental challenges affecting communities around the world. Changes in temperature, rainfall, water availability, air quality and extreme weather conditions can directly affect people's lives.</p>
+    <p>This project focuses on understanding the impact of changing climate and weather conditions at the local level in Boisar through data collection and community engagement.</p>
+    <p>Our interactive dashboards and charts provide visual insights into climate patterns, helping residents understand local environmental trends and contribute to solutions.</p>
+</section>
+
+<!-- CLIMATE CHANGE IN BOISAR -->
+<section class="boisar">
+    <h2>Climate Change in Boisar</h2>
+    <div class="info-container">
+        <div class="info-box">
+            <span>🌡️</span>
+            <h3>Increasing Temperature</h3>
+            <p>Understanding people's experience of increasing heat and changing temperatures.</p>
+        </div>
+        <div class="info-box">
+            <span>🌧️</span>
+            <h3>Rainfall Changes</h3>
+            <p>Studying irregular rainfall, heavy rainfall and waterlogging.</p>
+        </div>
+        <div class="info-box">
+            <span>💧</span>
+            <h3>Water Availability</h3>
+            <p>Understanding water shortages and changes in water availability.</p>
+        </div>
+        <div class="info-box">
+            <span>🌳</span>
+            <h3>Environment</h3>
+            <p>Studying changes in greenery, air quality and environmental conditions.</p>
+        </div>
+    </div>
+</section>
+
+<!-- DASHBOARD -->
+<section id="dashboard" class="dashboard-section">
+    <h2>Interactive Climate Dashboard</h2>
+    <p>Real-time visualization of climate indicators and trends in Boisar</p>
+    
+    <div class="dashboard-container">
+        <!-- Key Metrics -->
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-icon">🌡️</div>
+                <div class="metric-content">
+                    <p class="metric-label">Average Temperature</p>
+                    <p class="metric-value">32.5°C</p>
+                    <p class="metric-change">↑ 2.3°C (5 year trend)</p>
+                </div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-icon">🌧️</div>
+                <div class="metric-content">
+                    <p class="metric-label">Annual Rainfall</p>
+                    <p class="metric-value">1,245 mm</p>
+                    <p class="metric-change">↓ 15% (vs historical avg)</p>
+                </div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-icon">💧</div>
+                <div class="metric-content">
+                    <p class="metric-label">Water Availability</p>
+                    <p class="metric-value">62%</p>
+                    <p class="metric-change">Moderate stress level</p>
+                </div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-icon">🌫️</div>
+                <div class="metric-content">
+                    <p class="metric-label">Air Quality Index</p>
+                    <p class="metric-value">156</p>
+                    <p class="metric-change">Moderate pollution</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts Container -->
+        <div class="charts-grid">
+            <div class="chart-card">
+                <h3>Monthly Temperature Trend</h3>
+                <canvas id="temperatureChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>Rainfall Pattern</h3>
+                <canvas id="rainfallChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>Water Availability Status</h3>
+                <canvas id="waterChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>Air Quality Distribution</h3>
+                <canvas id="airQualityChart"></canvas>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ANALYTICS -->
+<section id="analytics" class="analytics-section">
+    <h2>Climate Impact Analytics</h2>
+    <p>Detailed analysis of climate patterns and community impact</p>
+    
+    <div class="analytics-container">
+        <!-- Analysis Cards -->
+        <div class="analysis-grid">
+            <div class="analysis-card">
+                <h3>📈 Temperature Analysis</h3>
+                <ul>
+                    <li>Peak temperature: 38°C (Summer)</li>
+                    <li>Average increase: 0.46°C per year</li>
+                    <li>Heat waves: 12 events (2024)</li>
+                    <li>Impact: Increased water demand</li>
+                </ul>
+            </div>
+            <div class="analysis-card">
+                <h3>🌧️ Rainfall Analysis</h3>
+                <ul>
+                    <li>Monsoon dependency: 65%</li>
+                    <li>Variability: ±200mm annually</li>
+                    <li>Extreme events: 3 heavy rains</li>
+                    <li>Trend: Decreasing rainfall</li>
+                </ul>
+            </div>
+            <div class="analysis-card">
+                <h3>💧 Water Stress Index</h3>
+                <ul>
+                    <li>Supply-demand gap: 38%</li>
+                    <li>Groundwater level: Declining</li>
+                    <li>Crisis months: June-August</li>
+                    <li>Recommendation: Water conservation</li>
+                </ul>
+            </div>
+            <div class="analysis-card">
+                <h3>🌳 Environmental Health</h3>
+                <ul>
+                    <li>Green cover: 23% (Declining)</li>
+                    <li>Air pollution days: 89</li>
+                    <li>PM2.5 levels: High</li>
+                    <li>Risk: Respiratory issues</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Comparative Analysis -->
+        <div class="comparative-charts">
+            <div class="chart-card">
+                <h3>Year-over-Year Temperature Comparison</h3>
+                <canvas id="comparisonChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>Seasonal Climate Patterns</h3>
+                <canvas id="seasonalChart"></canvas>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- IMPACT AREAS -->
+<section class="impact">
+    <h2>Major Impact Areas</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>🌡️ Temperature</h3>
+            <p>Changes in temperature and extreme heat conditions affect agricultural productivity and public health.</p>
+        </div>
+        <div class="card">
+            <h3>🌧️ Rainfall</h3>
+            <p>Irregular rainfall and heavy rainfall events impact water resources and infrastructure.</p>
+        </div>
+        <div class="card">
+            <h3>💧 Water</h3>
+            <p>Water shortage and irregular water supply affect daily activities and agriculture.</p>
+        </div>
+        <div class="card">
+            <h3>🌫️ Air Quality</h3>
+            <p>Changes in pollution, dust and air quality threaten public health.</p>
+        </div>
+        <div class="card">
+            <h3>🌳 Greenery</h3>
+            <p>Changes in trees, plants and green spaces impact biodiversity.</p>
+        </div>
+        <div class="card">
+            <h3>👥 Community</h3>
+            <p>Effects on people's daily activities, health and lifestyle require immediate action.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SURVEY -->
+<section id="survey" class="survey">
+    <div class="survey-heading">
+        <h2>Climate Change Survey</h2>
+        <p>Your response will help us understand climate change impacts at the local level in Boisar.</p>
+        <p>Please complete the survey below.</p>
+    </div>
+    <div class="form-container">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeedC3DPxknwdwhbbhHbC3VqEgV3fgTNA9gcR9xMrmLfqRPGg/viewform?embedded=true" width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+</section>
+
+<!-- THANK YOU -->
+<section class="thank-you">
+    <h2>🌱 Thank You</h2>
+    <p>Your participation helps us understand local climate change impacts and supports our academic research.</p>
+    <a href="#home" class="button">Back to Home</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <h3>Climate Change Impact Analysis</h3>
+    <p>At Local Levels in Boisar</p>
+    <p>Community Engagement Project | 2026</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
